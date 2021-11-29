@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="country__club.list">
+      <field name="name">Country_Club list</field>
+      <field name="model">country__club.country__club</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="country__club.action_window">
+      <field name="name">Country_Club window</field>
+      <field name="res_model">country__club.country__club</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="country__club.action_server">
+      <field name="name">Country_Club server</field>
+      <field name="model_id" ref="model_country__club_country__club"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="Country_Club" id="country__club.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="country__club.menu_1" parent="country__club.menu_root"/>
+    <menuitem name="Menu 2" id="country__club.menu_2" parent="country__club.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="country__club.menu_1_list" parent="country__club.menu_1"
+              action="country__club.action_window"/>
+    <menuitem name="Server to list" id="country__club" parent="country__club.menu_2"
+              action="country__club.action_server"/>
+-->
+  </data>
+</odoo>
