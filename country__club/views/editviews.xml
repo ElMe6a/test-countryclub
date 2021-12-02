@@ -1,0 +1,15 @@
+<!-- <odoo>
+  <data>
+	<record id="view_order_form" model="ir.ui.view>
+		<field name="name>sale.order.from.payment.mode</field>
+		<field name="model">sale.order</field>
+		<field name="inherit_id" ref="sale.view.order_form"/>
+		<field name="arch" type="xml">
+		  <field name="payment_term_id" position"after">
+			<field name="payment_mode/>
+		  </field>
+		</field>
+	</record>
+  </data>
+</odoo>
+   -->
